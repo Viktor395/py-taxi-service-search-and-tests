@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load crispy_forms_filters %}
-{% include 'includes/pagination.html' %}
 
 {% block content %}
   <h1>
@@ -43,4 +42,5 @@
   {% else %}
     <p>There are no cars in taxi</p>
   {% endif %}
+  {% include 'includes/pagination.html' %}
 {% endblock %}
